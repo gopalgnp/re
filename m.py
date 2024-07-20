@@ -10,7 +10,7 @@ from cryptography.fernet import Fernet
 import threading
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('6658426503:AAGXyi266msKeGxpbzo4VarIfA5JlqBZUDQ')
+bot = telebot.TeleBot('7181099687:AAFe5nHUszjSRsAbG-nkQ0rinRQKI0a3_LE')
 
 # Admin user IDs
 admin_id = {"881808734"}
@@ -306,8 +306,8 @@ def handle_bgmi(message):
             try:
                 port = int(command[2])
                 time = int(command[3])
-                if time > 190:
-                    response = "⚠️Error: Time interval must be less than 190 seconds."
+                if time > 240:
+                    response = "⚠️Error: Time interval must be less than 240 seconds."
                 else:
                     record_command_logs(user_id, '/bgmi', target, port, time)
                     log_command(user_id, target, port, time)
